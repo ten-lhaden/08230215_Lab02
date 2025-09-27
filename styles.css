@@ -1,0 +1,300 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6E0FF; /* your light purple */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #B3A1FF; /* slightly darker purple for header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.nav-links li a {
+    color: white;
+    padding: 8px 12px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #7D6EFF;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    border-radius: 3px;
+}
+
+/* Profile Image */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-image-container img {
+    width: 200px;
+    height: 200px; /* square */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid #B3A1FF;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #B3A1FF;
+    font-size: 16px;
+}
+
+button {
+    background-color: #7D6EFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #5C48CC;
+}
+
+/* Center and add space for "Send Me a Message" heading */
+.message-heading {
+    margin-top: 40px;   /* space above heading */
+    margin-bottom: 15px; /* space below heading */
+    text-align: center;  /* centers the heading */
+}
+
+
+/* Education page school images */
+.school-images {
+    display: flex;
+    gap: 40px; /* increased space between images */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px; /* space above the images container */
+}
+
+.school {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* square width */
+}
+
+.school img {
+    width: 250px;   /* square width */
+    height: 250px;  /* square height */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #B3A1FF; /* matches your light purple theme */
+    transition: transform 0.3s;
+}
+
+.school img:hover {
+    transform: scale(1.05);
+}
+
+.school p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.school-description {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Add space between Education points and subheading */
+.section ul {
+    margin-bottom: 50px; /* space after the list before "Where My Journey Began" */
+}
+
+.section h3 {
+    margin-bottom: 15px; /* reduce space before images */
+}
+
+
+/* skills box*/
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* space between boxes */
+    margin-top: 20px;
+}
+
+.skill-box {
+    background-color: #F0E6FF; /* light purple, matching your theme */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #B3A1FF;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.skill-box h3 {
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    color: #5C48CC;
+}
+
+.skill-box p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* space between project boxes */
+    margin-top: 20px;
+}
+
+.project-box {
+    background-color: #F0E6FF; /* light purple matching your theme */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #B3A1FF;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-box h3 {
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    color: #5C48CC;
+}
+
+.project-box p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #B3A1FF;
+    font-size: 16px;
+}
+
+button {
+    background-color: #7D6EFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #5C48CC;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #B3A1FF;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #B3A1FF;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 0 0 0 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
